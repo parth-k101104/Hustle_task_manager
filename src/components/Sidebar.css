@@ -1,0 +1,75 @@
+/* src/components/Sidebar.css */
+.sidebar {
+    width: 200px;
+    background-color: #3E3B3B;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+  }
+  
+  .username {
+    font-size: 16px;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  
+  .underline {
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .nav-title {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: white; /* Set default color to white */
+  }
+  
+  .nav-title.active-title {
+    border-bottom: 2px solid #ffffff; /* Underline when active */
+    color: white; /* Ensure the color stays white even when active */
+  }
+  
+  .nav-container {
+    width: 100%;
+    background-color: #676767;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white; /* Keep link text white */
+    width: 100%;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #2e2d2d; /* Hover effect on the background, not text color */
+  }
+  
+  nav a.active {
+    background-color: #2e2d2d;
+    font-weight: bold;
+    color: white; /* Ensure active link text color stays white */
+  }
+  
